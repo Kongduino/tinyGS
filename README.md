@@ -6,7 +6,7 @@ TinyGS is an open network of Ground Stations distributed around the world to rec
 
 # Hardware
 
-This project is based on ESP32 boards and currently it is compatible with sx126x and sx127x LoRa módules but we plan to support more radio módules in the future.
+This project is based on ESP32 boards and currently is compatible with sx126x and sx127x LoRa modules but we plan to support more radio modules in the future.
 
 Currently we are officially supporting the following proven LoRa boards:
 
@@ -24,23 +24,23 @@ Currently we are officially supporting the following proven LoRa boards:
 - **ESP32-S3 150–960Mhz - HELTEC LORA32 V3 SX1262**
 - **ESP32-S3 433Mhz Custom ESP32-S3 433MHz SX1278**
 
-However, any ESP32 board with sx126x or sx127x módule can be configured using templates. You can find more info about them [here](https://github.com/G4lile0/tinyGS/wiki/Board-Templates).
+However, any ESP32 board with sx126x or sx127x module can be configured using templates. You can find more info about them [here](https://github.com/G4lile0/tinyGS/wiki/Board-Templates).
 
 # Install
 
 ------
 
-#### Use our brand new web installer to setup your board for first time. Just go to https://installer.tinygs.com and follow the instructions there
+#### Use our brand-new web installer to set up your board for the first time. Just go to https://installer.tinygs.com and follow the instructions there.
 
 -----
 
 The first time you flash your board you can use the [web installer](https://installer.tinygs.com) using Google Chrome web browser on Linux, Windows or MacOS. Follow instructions there.
 
-You can also download the latest [release](https://github.com/G4lile0/tinyGS/releases) and flash it with PlatformIO. If you dont know PlatformIO here you have our [PlatformIO guide](https://github.com/G4lile0/tinyGS/wiki/Platformio).
+You can also download the latest [release](https://github.com/G4lile0/tinyGS/releases) and flash it with PlatformIO. If you don't know PlatformIO, here is our [PlatformIO guide](https://github.com/G4lile0/tinyGS/wiki/Platformio).
 
 Later you can update your Ground Station via [local web OTA or auto update method](https://github.com/G4lile0/tinyGS/wiki/OTA-Update).
 
-You can also use Arduino IDE, but is a longer and hard path, because you need to install all dependencies. [Arduino guide](https://github.com/G4lile0/tinyGS/wiki/Arduino-IDE)
+You can also use Arduino IDE, but it's a longer and hard path, because you need to install all dependencies. [Arduino guide](https://github.com/G4lile0/tinyGS/wiki/Arduino-IDE)
 
 # Configuration
 
@@ -48,23 +48,23 @@ Check our wiki [configuration page](https://github.com/G4lile0/tinyGS/wiki/Groun
 
 # Main data website
 
-All data received by TinyGS Ground Stations are showed at our TinyGS website
+All data received by TinyGS Ground Stations is shown on our TinyGS website.
 
 [https://tinygs.com/](https://tinygs.com/)
 
-At this web you can see:
+on this website you can see:
 
 - [Ground Stations list](https://tinygs.com/stations)
 - [Supported satellites](https://tinygs.com/satellites)
 - [All data packets received by the community in real time](https://tinygs.com/packets)
 
-At your personal area you can edit some parameters of your Ground Stations remotely.
+In your personal area you can edit some parameters of your Ground Stations remotely.
 
 This is the main data recovery system, but we are developing an API to access data.
 
 # Local data access
 
-You can access to your Ground Station data and configuration via local website at your
+You can access your Ground Station data and configuration via local website at your
 
 <p align="center">
 <img src="/doc/images/TinyGS_dashboard.png" width="300">
@@ -80,15 +80,15 @@ Also you can use the serial port of your board to see the basic console.
 
 # OTA update and Auto Tuning
 
-Once your Ground Station is alive and connected it can be automagically updated with the last version by the server via [OTA](https://github.com/G4lile0/tinyGS/wiki/OTA-Update).
+Once your Ground Station is alive and connected, it can be automagically updated with the last version by the server via [OTA](https://github.com/G4lile0/tinyGS/wiki/OTA-Update).
 
-Also the Ground stations can be remote configured automagically ([Auto Tuning](https://github.com/G4lile0/tinyGS/wiki/Radio-Tuning-Guide)) to be able to hear the next satellite pass with the correct settings.
+Also, the Ground stations can be remotely configured automagically ([Auto Tuning](https://github.com/G4lile0/tinyGS/wiki/Radio-Tuning-Guide)) to be able to hear the next satellite pass with the correct settings.
 
-Both systems are optional and you can opt-out at your Ground Station configuration, for example if you want to only support one specific satellite. But we recommend activating both to maintain the network health.
+Both systems are optional and you can opt out in your Ground Station configuration, for example if you want to only support one specific satellite. But we recommend activating both to maintain the network health.
 
 # Community
 
-We are using Telegram as the main communication channel for the project. There are also two channels where you can subscribe and be updated automátically whenever a new packet is received by the network from the Satellite.
+We are using Telegram as the main communication channel for the project. There are also two channels that you can subscribe to and be updated automatically whenever a new packet is received by the network from the Satellite.
 
 - [Main community chat](https://t.me/joinchat/DmYSElZahiJGwHX6jCzB3Q)
 - [Data channel](https://t.me/tinyGS_Telemetry) station status and received packets
@@ -96,19 +96,19 @@ We are using Telegram as the main communication channel for the project. There a
 
 # History
 
-Initially TinyGS was born under the name ESP32 Fossa Groundstation, it was developed as a "weekend" project for the FossaSAT-1 LoRa satellite. We are passionate about space and created this project to be able to track and use the satellites and to learn and experiment about radio. Currently the network is open to any LoRa satellite and we also support other flying objects that have a compatible radio modulation with our hardware such as FSK, GFSK, MSK, GMSK, LoRa and OOK. And the project was renamed to TinyGS.
+Initially TinyGS was born under the name ESP32 Fossa Groundstation. It was developed as a "weekend" project for the FossaSAT-1 LoRa satellite. We are passionate about space and created this project to be able to track and use the satellites and to learn and experiment about radio. Currently the network is open to any LoRa satellite and we also support other flying objects that have a compatible radio modulation with our hardware such as FSK, GFSK, MSK, GMSK, LoRa and OOK. And the project was renamed TinyGS.
 
-Even though we have no relation with the Fossa team, they inspired this project and we are excited to support their new launched satellites into our network.
+Even though we have no relation with the Fossa team, they inspired this project and we are excited to support their newly launched satellites into our network.
 
-This are the more important moments of the project:
+These are the more important moments of the project:
 
-- Nov 28, 2019 ESP32-OLED-Fossa-GroundStation project born.
+- Nov 28, 2019 ESP32-OLED-Fossa-GroundStation proESP32was born.
 - Dec 6, 2019 FossaSAT-1 deployed with an Electron rocket by Rocket Lab.
-- Dec 10,2019 YL3CT&#39;s GS receive the fist LoRa packet from FossaSAT-1
-- Sep 28,2020 6U Norby LoRa satellite is deployed with a Soyuz-2-1b launcher
-- Oct 11, 2020 KA9ETC&#39;s GS receive the first LoRa packet from Norby
-- Jan 24, 2021 3x V-R3x sat deployed with a Falcon-9
-- Jan 25, 2021 KA9ETC&#39;S GS receive the first LoRa packet from V-R3x
+- Dec 10,2019 YL3CT&#39;s GS received the fist LoRa packet from FossaSAT-1.
+- Sep 28,2020 6U Norby LoRa satellite is deployed with a Soyuz-2-1b launcher.
+- Oct 11, 2020 KA9ETC&#39;s GS received the first LoRa packet from Norby.
+- Jan 24, 2021 3x V-R3x sat deployed with a Falcon-9.
+- Jan 25, 2021 KA9ETC&#39;S GS received the first LoRa packet from V-R3x.
 - Feb 14, 2021 New name and web tinyGS.com with a new Beta firmware.
 
 # Contribute
@@ -125,7 +125,7 @@ Check our [wiki](https://github.com/G4lile0/tinyGS/wiki)!
 
 # Project dependencies
 
-This project relies on several third party libraries:
+This project relies on several third-party libraries:
 
 - RadioLib
 - ArduinoJson
@@ -148,7 +148,7 @@ The main TinyGS developer team is:
 - [gmag11](https://github.com/gmag11)
 
 # Contributors
-There are many people that contributed to this project in many different forms. We have a great active community in our Telegram group and we would really like to thank all the community support from contributions to the project to useful tips on the group. And, if your are still not part of it we would like to invite you to join it on [Telegram](https://t.me/joinchat/DmYSElZahiJGwHX6jCzB3Q).
+There are many people that contributed to this project in many different forms. We have a great active community in our Telegram group and we would really like to thank all the community support from contributions to the project to useful tips on the group. And, if you are still not part of it, we would like to invite you to join it on [Telegram](https://t.me/joinchat/DmYSElZahiJGwHX6jCzB3Q).
 
 
 # License
